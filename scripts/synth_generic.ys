@@ -1,0 +1,24 @@
+# synth_generic.ys - technology-independent synthesis (first look at the logic)
+# Run from the project root:
+#   yosys -l reports/synth/generic.log scripts/synth_generic.ys
+# Note: in a .ys file a comment must be on its own line.
+
+read_verilog rtl/riscv_core.v rtl/program_counter.v rtl/pipeline_registers.v
+read_verilog rtl/control_unit.v rtl/immediate_gen.v rtl/register_file.v
+read_verilog rtl/alu.v rtl/hazard_unit.v rtl/forwarding_unit.v rtl/load_store_unit.v
+
+# elaborate the design, fail if a module is missing
+hierarchy -check -top riscv_core
+
+# always blocks -> multiplexers and flip-flops, then clean up
+proc
+opt
+
+# stop on combinational loops or multiple drivers
+check -assert
+
+# generic gate-level synthesis and a cell-count report
+synth -top riscv_core
+tee -o reports/synth/generic_stat.rpt stat
+
+write_verilog -noattr results/synth/riscv_core_generic.v

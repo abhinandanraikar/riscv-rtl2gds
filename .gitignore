@@ -1,0 +1,21 @@
+# generated files - never commit these
+results/
+sw/build/
+pd/logs/
+pd/objects/
+pd/results/
+pd/reports/
+*.vcd
+*.vvp
+*.fst
+obj_dir/
+__pycache__/
+*.log
+
+# keep the curated report snapshots
+!reports/
+reports/sim/
+reports/synth/
+reports/sta/
+!reports/pd/
+!reports/pd/**/*.log
