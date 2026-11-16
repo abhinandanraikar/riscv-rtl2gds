@@ -1,0 +1,328 @@
+OpenROAD 26Q3-2371-g952a5be852 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+read_liberty /home/abhi/eda/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db /home/abhi/riscv_rtl2gds/pd/results/sky130hd/riscv_core/base/4_cts.odb
+read_sdc /home/abhi/riscv_rtl2gds/pd/results/sky130hd/riscv_core/base/4_cts.sdc
+source /home/abhi/eda/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+pin_access
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     441
+Number of vias:       29
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   riscv_core
+Die area:                 ( 0 0 ) ( 438530 438530 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     8691
+Number of terminals:      170
+Number of snets:          2
+Number of nets:           6299
+
+[INFO DRT-0167] List of default vias:
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 211.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete Fr_VIA.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] FR_VIA shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 243966.
+[INFO DRT-0033] mcon shape region query size = 153159.
+[INFO DRT-0033] met1 shape region query size = 45491.
+[INFO DRT-0033] via shape region query size = 12400.
+[INFO DRT-0033] met2 shape region query size = 7567.
+[INFO DRT-0033] via2 shape region query size = 9920.
+[INFO DRT-0033] met3 shape region query size = 7481.
+[INFO DRT-0033] via3 shape region query size = 9920.
+[INFO DRT-0033] met4 shape region query size = 2992.
+[INFO DRT-0033] via4 shape region query size = 481.
+[INFO DRT-0033] met5 shape region query size = 543.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0076]   Complete 1000 pins.
+[INFO DRT-0078]   Complete 1739 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0079]   Complete 200 unique inst patterns.
+[INFO DRT-0081]   Complete 211 unique inst patterns.
+[INFO DRT-0084]   Complete 4284 groups.
+#scanned instances     = 8691
+#unique  instances     = 211
+#stdCellGenAp          = 7137
+#stdCellValidPlanarAp  = 92
+#stdCellValidViaAp     = 5243
+#stdCellPinNoAp        = 6
+#stdCellPinCnt         = 24020
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:05:10, elapsed time = 00:00:35, memory = 167.08 (MB), peak = 166.38 (MB)
+Took 35 seconds: pin_access
+global_route -congestion_report_file /home/abhi/riscv_rtl2gds/pd/reports/sky130hd/riscv_core/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 35219
+[INFO GRT-0019] Found 153 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 51
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal      58647         45252          22.84%
+met2       Vertical        51150         39308          23.15%
+met3       Horizontal      38037         29853          21.52%
+met4       Vertical        25358         18042          28.85%
+met5       Horizontal       5580          4030          27.78%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove congestion.
+[INFO GRT-0102] Start extra iteration 1/30
+[INFO GRT-0102] Start extra iteration 2/30
+[INFO GRT-0197] Via related to pin nodes: 41429
+[INFO GRT-0198] Via related Steiner nodes: 1367
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 53255
+[INFO GRT-0112] Final usage 3D: 202371
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Congestion
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             45252         17595           38.88%             0 /  0 /  0
+met2             39308         19903           50.63%             0 /  0 /  0
+met3             29853          1626            5.45%             0 /  0 /  0
+met4             18042          3482           19.30%             0 /  0 /  0
+met5              4030             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           136485         42606           31.22%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 422549 um
+[INFO GRT-0014] Routed nets: 6247
+[INFO GRT-0303] Global routing runtime = 00:00:01
+estimate_parasitics -global_routing
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      6426
+     1000 |     +0.0% |       0 |       0 |             0 |      5426
+[WARNING RSZ-0104] Net _4620_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4619_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4604_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4602_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4601_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4590_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4589_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4587_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4583_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4582_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4578_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4575_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4618_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4617_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4616_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4615_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4614_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4612_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4611_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4610_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4609_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4606_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4605_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4603_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4600_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4599_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4598_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4597_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4596_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4595_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4591_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4588_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4586_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4584_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4581_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4580_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4577_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4574_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4573_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4613_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4608_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4607_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4594_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4593_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4592_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4585_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4579_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4576_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4572_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4571_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4570_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _4569_ only has one pin. Check if it is intended to be dangling.
+     2000 |     +0.0% |       0 |       0 |             0 |      4426
+     3000 |     +0.0% |       0 |       0 |             0 |      3426
+     4000 |     +0.0% |       0 |       0 |             0 |      2426
+     5000 |     +0.0% |       0 |       0 |             0 |      1426
+     6000 |     +0.0% |       0 |       0 |             0 |       426
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0504] Runtime: 1.05s
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 187601.17 um^2
+[INFO DPL-0007] Movable instances area: 82036.18 um^2
+[INFO DPL-0008] Fixed instances area within core: 3121.74 um^2
+[INFO DPL-0009] Utilization: 45.4%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 8691 cells
+[INFO DPL-0500] Runtime: 0.05s
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL          227616.1 u
+legalized HPWL         227616.1 u
+delta HPWL                    0 %
+
+global_route -end_incremental -congestion_report_file /home/abhi/riscv_rtl2gds/pd/reports/sky130hd/riscv_core/base/congestion_post_repair_design.rpt
+Repair setup and hold violations...
+estimate_parasitics -global_routing
+repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
+[INFO RSZ-0505] Runtime: 0.52s
+[INFO RSZ-0033] No hold violations found.
+[INFO RSZ-0506] Runtime: 0.18s
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 187601.17 um^2
+[INFO DPL-0007] Movable instances area: 82036.18 um^2
+[INFO DPL-0008] Fixed instances area within core: 3121.74 um^2
+[INFO DPL-0009] Utilization: 45.4%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 8691 cells
+[INFO DPL-0500] Runtime: 0.05s
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL          227616.1 u
+legalized HPWL         227616.1 u
+delta HPWL                    0 %
+
+check_placement -verbose
+global_route -end_incremental -congestion_report_file /home/abhi/riscv_rtl2gds/pd/reports/sky130hd/riscv_core/base/congestion_post_repair_timing.rpt
+estimate_parasitics -global_routing
+global_route -start_incremental
+global_route -end_incremental -congestion_report_file /home/abhi/riscv_rtl2gds/pd/reports/sky130hd/riscv_core/base/congestion_post_recover_power.rpt
+Repair antennas...
+[INFO GRT-0012] Found 15 antenna violations.
+[INFO GRT-0302] Inserted 10 jumpers for 10 nets.
+[INFO GRT-0012] Found 5 antenna violations.
+[INFO DPL-0006] Core area: 187601.17 um^2
+[INFO DPL-0007] Movable instances area: 81949.85 um^2
+[INFO DPL-0008] Fixed instances area within core: 3238.11 um^2
+[INFO DPL-0009] Utilization: 45.4%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 8703 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |         32 |        10 |        22
+        1 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 1.
+[INFO DPL-0500] Runtime: 0.07s
+[INFO GRT-0015] Inserted 12 diodes.
+[INFO GRT-0012] Found 0 antenna violations.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+Estimate parasitics...
+estimate_parasitics -global_routing
+Report metrics stage 5, global route...
+
+==========================================================================
+global route report_design_area
+--------------------------------------------------------------------------
+Design area 85188 um^2 45% utilization.
+[INFO FLW-0007] clock core_clock period 10.000000
+[INFO FLW-0008] Clock core_clock period 7.919
+[INFO FLW-0009] Clock core_clock slack 1.664
+write_sdc -no_timestamp /home/abhi/riscv_rtl2gds/pd/results/sky130hd/riscv_core/base/updated_clks.sdc
+[INFO FLW-0011] Path endpoint path count 2677
+write_db /home/abhi/riscv_rtl2gds/pd/results/sky130hd/riscv_core/base/5_1_grt.odb
+write_sdc -no_timestamp /home/abhi/riscv_rtl2gds/pd/results/sky130hd/riscv_core/base/5_1_grt.sdc
+Elapsed time: 0:52.85[h:]min:sec. CPU time: user 395.82 sys 4.69 (757%). Peak memory: 469668KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+5_1_grt                   .odb           52            458 ffbc9bc17459d9cb08b5
+5_1_grt                   .sdc                             f6bf1590aa7464829ecc
