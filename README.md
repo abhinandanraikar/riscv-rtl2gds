@@ -3,7 +3,13 @@
 A 5-stage pipelined RV32I processor core taken from Verilog RTL to a GDSII
 layout on the SkyWater 130 nm process, using a fully open-source flow.
 
-![Final layout](docs/img/final_gds.png)
+| Placement | Routing |
+|---|---|
+| ![Placement](docs/img/placement.png) | ![Routing](docs/img/routing.png) |
+
+| Clock tree | Critical path |
+|---|---|
+| ![Clock tree](docs/img/clock_tree.png) | ![Critical path](docs/img/worst_path.png) |
 
 ## Design
 - RV32I base integer instruction set, 5 stages: IF, ID, EX, MEM, WB
