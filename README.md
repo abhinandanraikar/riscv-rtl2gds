@@ -27,6 +27,7 @@ layout on the SkyWater 130 nm process, using a fully open-source flow.
 | Cell area / utilisation | 85,193 um2 / 45 % |
 | Routing violations | 0 |
 | DRC violations (KLayout) | 0 |
+| LVS (KLayout) | Clean: netlists match |
 
 ## Tools
 Icarus Verilog, Verilator, Yosys, OpenROAD (OpenROAD-flow-scripts), OpenSTA, KLayout
